@@ -2,6 +2,6 @@
 
 <ul>
     <li *ngFor="let a of archive">
-        {{ a.year }} / {{ a.month }}
+        <a [routerLink]="['archive', a.year, a.month]">Archive {{ a.year }} / {{ a.month }}</a>
     </li>
 </ul>

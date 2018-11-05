@@ -19,9 +19,18 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot( [
-      { path: '', component: HomeComponent },
-      { path: 'archive/:year/:month', component: ArchiveComponent },
-      { path: '**', component: NotFoundComponent }
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'archive/:year/:month',
+        component: ArchiveComponent
+      },
+      {
+        path: '**',
+        component: NotFoundComponent
+      }
     ] )
   ],
   providers: [],
